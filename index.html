@@ -21,6 +21,7 @@
       </a>
       <nav class="nav-links" id="navLinks">
         <a href="#services">บริการ</a>
+        <a href="#cases">ผลงาน</a>
         <a href="#how">วิธีการทำงาน</a>
         <a href="#pricing">แพ็กเกจ</a>
         <a href="#faq">คำถามที่พบบ่อย</a>
@@ -117,8 +118,89 @@
       </div>
     </section>
 
+    <!-- Case Studies -->
+    <section class="section section-alt" id="cases">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">ผลงานของเรา</span>
+          <h2>ผลลัพธ์จริงจากลูกค้าของเรา</h2>
+          <p class="section-sub">ตัวอย่างโปรเจกต์ที่ AI Coding ช่วยให้ทีมส่งงานได้เร็วขึ้นและคุณภาพดีขึ้น</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="case-card reveal">
+            <div class="case-cover cover-fintech">
+              <span class="case-tag">FinTech</span>
+              <span class="case-emoji">💳</span>
+            </div>
+            <div class="case-body">
+              <p class="case-client">FinBridge</p>
+              <h3>ย้ายระบบ Core Banking จาก COBOL สู่ Java</h3>
+              <dl class="case-detail">
+                <dt>โจทย์</dt>
+                <dd>โค้ดเก่ากว่า 400,000 บรรทัด ไม่มีเอกสาร และคนดูแลใกล้เกษียณ</dd>
+                <dt>วิธีแก้</dt>
+                <dd>ใช้ AI วิเคราะห์ logic สร้างเอกสาร และแปลงโค้ดทีละโมดูล พร้อม test เทียบผลลัพธ์</dd>
+              </dl>
+              <div class="case-metrics">
+                <div><strong>6</strong><span>เดือน<br>(จากแผน 2 ปี)</span></div>
+                <div><strong>0</strong><span>downtime<br>ตอนย้ายระบบ</span></div>
+                <div><strong>-60%</strong><span>ค่าดูแล<br>ระบบ</span></div>
+              </div>
+              <ul class="case-stack"><li>Java</li><li>Spring</li><li>AI Migration</li></ul>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-cover cover-ecom">
+              <span class="case-tag">E-commerce</span>
+              <span class="case-emoji">🛒</span>
+            </div>
+            <div class="case-body">
+              <p class="case-client">ShopWave</p>
+              <h3>AI Agent ช่วยรีวิวโค้ดและ deploy อัตโนมัติ</h3>
+              <dl class="case-detail">
+                <dt>โจทย์</dt>
+                <dd>ทีม 30 คนรอ code review นาน ทำให้ปล่อยฟีเจอร์ได้แค่เดือนละครั้ง</dd>
+                <dt>วิธีแก้</dt>
+                <dd>วาง AI Agent ตรวจ PR หาบั๊กและช่องโหว่ เขียน test เพิ่ม และเชื่อมกับ CI/CD</dd>
+              </dl>
+              <div class="case-metrics">
+                <div><strong>8x</strong><span>ความถี่<br>การ release</span></div>
+                <div><strong>-75%</strong><span>เวลารอ<br>review</span></div>
+                <div><strong>-40%</strong><span>บั๊กบน<br>production</span></div>
+              </div>
+              <ul class="case-stack"><li>Next.js</li><li>GitHub Actions</li><li>AI Agent</li></ul>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-cover cover-health">
+              <span class="case-tag">HealthTech</span>
+              <span class="case-emoji">🏥</span>
+            </div>
+            <div class="case-body">
+              <p class="case-client">Datalytic Health</p>
+              <h3>แอปนัดหมายแพทย์ MVP ภายใน 4 สัปดาห์</h3>
+              <dl class="case-detail">
+                <dt>โจทย์</dt>
+                <dd>สตาร์ทอัพต้องมีแอปจริงไปเสนอนักลงทุน แต่มีนักพัฒนาแค่ 2 คน</dd>
+                <dt>วิธีแก้</dt>
+                <dd>อบรมทีมใช้ AI Coding และพัฒนาร่วมกัน ทั้งแอปมือถือ ระบบหลังบ้าน และ dashboard</dd>
+              </dl>
+              <div class="case-metrics">
+                <div><strong>4</strong><span>สัปดาห์<br>ถึง MVP</span></div>
+                <div><strong>3x</strong><span>ผลงาน<br>ต่อนักพัฒนา</span></div>
+                <div><strong>฿20M</strong><span>เงินลงทุน<br>ที่ได้รับ</span></div>
+              </div>
+              <ul class="case-stack"><li>Flutter</li><li>Node.js</li><li>Training</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- How it works -->
-    <section class="section section-alt" id="how">
+    <section class="section" id="how">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">วิธีการทำงาน</span>
@@ -150,7 +232,7 @@
     </section>
 
     <!-- Pricing -->
-    <section class="section" id="pricing">
+    <section class="section section-alt" id="pricing">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">แพ็กเกจ</span>
@@ -203,7 +285,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section section-alt" id="faq">
+    <section class="section" id="faq">
       <div class="container container-narrow">
         <div class="section-head reveal">
           <span class="eyebrow">FAQ</span>

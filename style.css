@@ -175,6 +175,46 @@ img { max-width: 100%; }
 .card h3 { color: var(--blue-900); font-size: 1.2rem; margin-bottom: 8px; }
 .card p { color: var(--muted); }
 
+/* ===== Case Studies ===== */
+.section-sub { color: var(--muted); max-width: 560px; margin: 12px auto 0; }
+.case-card {
+  display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden; transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+.case-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--blue-500); }
+.case-cover { position: relative; height: 150px; display: grid; place-items: center; overflow: hidden; }
+.case-cover::after {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.25) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+.cover-fintech { background: linear-gradient(135deg, var(--blue-900), var(--blue-600)); }
+.cover-ecom { background: linear-gradient(135deg, var(--blue-700), #4fc3ff); }
+.cover-health { background: linear-gradient(135deg, var(--blue-600), #7fd8ff); }
+.case-emoji { position: relative; z-index: 1; font-size: 3.4rem; transition: transform .4s; }
+.case-card:hover .case-emoji { transform: scale(1.15) rotate(-6deg); }
+.case-tag {
+  position: absolute; top: 14px; left: 14px; z-index: 1; padding: 4px 12px; border-radius: 999px;
+  background: rgba(255,255,255,.92); color: var(--blue-700); font-size: .8rem; font-weight: 600;
+}
+.case-body { display: flex; flex-direction: column; flex: 1; padding: 26px 26px 24px; }
+.case-client { color: var(--blue-600); font-weight: 600; font-size: .9rem; }
+.case-body h3 { color: var(--blue-900); font-size: 1.15rem; line-height: 1.45; margin: 4px 0 14px; }
+.case-detail { margin-bottom: 20px; flex: 1; }
+.case-detail dt { font-weight: 600; font-size: .85rem; color: var(--blue-900); }
+.case-detail dd { color: var(--muted); font-size: .95rem; margin-bottom: 10px; }
+.case-metrics {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 16px 0;
+  border-block: 1px dashed var(--border); margin-bottom: 16px; text-align: center;
+}
+.case-metrics strong { display: block; font-size: 1.4rem; color: var(--blue-600); line-height: 1.2; }
+.case-metrics span { font-size: .78rem; color: var(--muted); line-height: 1.4; display: block; }
+.case-stack { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+.case-stack li {
+  font-family: var(--mono); font-size: .75rem; padding: 3px 10px; border-radius: 6px;
+  background: var(--blue-50); color: var(--blue-700); border: 1px solid var(--blue-100);
+}
+
 /* ===== Steps ===== */
 .steps { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; counter-reset: step; }
 .step { position: relative; background: var(--white); border-radius: var(--radius); padding: 30px 26px; box-shadow: 0 4px 14px rgba(11,42,91,.05); }
