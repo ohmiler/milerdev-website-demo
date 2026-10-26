@@ -105,56 +105,6 @@ const statObserver = new IntersectionObserver((entries) => {
 });
 document.querySelectorAll("[data-count]").forEach((el) => statObserver.observe(el));
 
-// ===== Testimonials carousel =====
-const track = document.getElementById("testimonialTrack");
-const dotsWrap = document.getElementById("testimonialDots");
-const slides = track.querySelectorAll(".testimonial");
-
-const perView = () => Number(getComputedStyle(track).getPropertyValue("--per-view")) || 1;
-const pageCount = () => slides.length - perView() + 1;
-const currentIndex = () => Math.round(track.scrollLeft / (slides[1].offsetLeft - slides[0].offsetLeft));
-
-function goTo(index) {
-  const pages = pageCount();
-  const i = (index + pages) % pages; // wrap around at both ends
-  track.scrollTo({ left: slides[i].offsetLeft - slides[0].offsetLeft });
-}
-
-function renderDots() {
-  dotsWrap.innerHTML = "";
-  for (let i = 0; i < pageCount(); i++) {
-    const dot = document.createElement("button");
-    dot.setAttribute("aria-label", `ไปที่รีวิวที่ ${i + 1}`);
-    dot.addEventListener("click", () => goTo(i));
-    dotsWrap.appendChild(dot);
-  }
-  updateDots();
-}
-
-function updateDots() {
-  const active = Math.min(currentIndex(), pageCount() - 1);
-  [...dotsWrap.children].forEach((d, i) => d.classList.toggle("active", i === active));
-}
-
-document.getElementById("prevTestimonial").addEventListener("click", () => goTo(currentIndex() - 1));
-document.getElementById("nextTestimonial").addEventListener("click", () => goTo(currentIndex() + 1));
-track.addEventListener("scroll", updateDots, { passive: true });
-window.addEventListener("resize", renderDots);
-renderDots();
-
-// Autoplay, paused while the user hovers, focuses or touches the carousel
-let autoplay = null;
-const carousel = track.closest(".testimonial-carousel");
-const startAutoplay = () => {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  stopAutoplay();
-  autoplay = setInterval(() => goTo(currentIndex() + 1), 5000);
-};
-const stopAutoplay = () => clearInterval(autoplay);
-["mouseenter", "focusin", "touchstart"].forEach((ev) => carousel.addEventListener(ev, stopAutoplay, { passive: true }));
-["mouseleave", "focusout"].forEach((ev) => carousel.addEventListener(ev, startAutoplay));
-startAutoplay();
-
 // ===== Pricing toggle =====
 const billingSwitch = document.getElementById("billingSwitch");
 const billingLabels = document.querySelectorAll("[data-billing]");
