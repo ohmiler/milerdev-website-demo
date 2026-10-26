@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MilerDev — AI Coding Solutions</title>
+  <meta name="description" content="MilerDev บริษัทพัฒนาซอฟต์แวร์ด้วย AI Coding ช่วยให้ทีมของคุณเขียนโค้ดได้เร็วขึ้น ปลอดภัยขึ้น และฉลาดขึ้น">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span>Miler<strong>Dev</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">บริการ</a>
+        <a href="#how">วิธีการทำงาน</a>
+        <a href="#pricing">แพ็กเกจ</a>
+        <a href="#faq">คำถามที่พบบ่อย</a>
+        <a href="#contact" class="btn btn-primary btn-sm">ติดต่อเรา</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="badge">🚀 AI-Powered Development</span>
+          <h1>เขียนโค้ดเร็วขึ้น <span class="gradient-text">10 เท่า</span><br>ด้วยพลังของ AI</h1>
+          <p class="lead">MilerDev ช่วยองค์กรของคุณนำ AI Coding มาใช้จริง ตั้งแต่สร้างซอฟต์แวร์ใหม่ วางระบบ AI Agent ไปจนถึงอบรมทีมนักพัฒนา</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">เริ่มโปรเจกต์กับเรา</a>
+            <a href="#services" class="btn btn-ghost">ดูบริการ →</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong data-count="120">0</strong><span>+ โปรเจกต์</span></div>
+            <div><strong data-count="85">0</strong><span>% เวลาที่ลดลง</span></div>
+            <div><strong data-count="40">0</strong><span>+ ลูกค้าองค์กร</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-title">milerdev-agent.ts</span>
+            </div>
+            <pre class="code-body"><code id="typedCode"></code><span class="cursor">▍</span></pre>
+          </div>
+          <div class="floating-card card-1">✅ Tests passed <b>128/128</b></div>
+          <div class="floating-card card-2">⚡ Build time <b>-72%</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted -->
+    <section class="trusted">
+      <div class="container">
+        <p>ได้รับความไว้วางใจจากทีมพัฒนาชั้นนำ</p>
+        <div class="trusted-logos">
+          <span>NovaTech</span><span>CloudPeak</span><span>FinBridge</span><span>Datalytic</span><span>ShopWave</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">บริการของเรา</span>
+          <h2>ครบทุกอย่างที่ทีมคุณต้องการ<br>เพื่อก้าวสู่ยุค AI Coding</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">🤖</div>
+            <h3>AI Software Development</h3>
+            <p>พัฒนาเว็บ แอป และระบบหลังบ้านด้วยเวิร์กโฟลว์ที่มี AI ช่วยเขียน ตรวจ และทดสอบโค้ด ส่งงานไวขึ้นโดยคุณภาพไม่ลด</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🧩</div>
+            <h3>AI Agent & Automation</h3>
+            <p>ออกแบบและสร้าง AI Agent ที่เชื่อมกับระบบภายในขององค์กร ทำงานซ้ำ ๆ แทนคน ตั้งแต่ code review ไปจนถึง deploy</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🔍</div>
+            <h3>AI Code Review</h3>
+            <p>ตรวจหาบั๊ก ช่องโหว่ความปลอดภัย และจุดที่ควรปรับปรุงในโค้ดเบสเดิมของคุณ พร้อมรายงานและแนวทางแก้ไข</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🎓</div>
+            <h3>Developer Training</h3>
+            <p>เวิร์กช็อปสอนทีมใช้เครื่องมือ AI Coding อย่างมีประสิทธิภาพ เขียน prompt ให้ได้ผล และวางมาตรฐานการใช้งานในทีม</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🏗️</div>
+            <h3>Legacy Modernization</h3>
+            <p>ย้ายระบบเก่าสู่เทคโนโลยีใหม่ด้วย AI ช่วยวิเคราะห์และแปลงโค้ด ลดความเสี่ยงและเวลาในการ migrate</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🛡️</div>
+            <h3>AI Consulting</h3>
+            <p>ให้คำปรึกษาเชิงกลยุทธ์ เลือกเครื่องมือ วางนโยบายความปลอดภัยของข้อมูล และวัดผล ROI ของการใช้ AI</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">วิธีการทำงาน</span>
+          <h2>4 ขั้นตอนสู่ซอฟต์แวร์ที่ดีกว่า</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>ทำความเข้าใจ</h3>
+            <p>คุยเรื่องเป้าหมาย ปัญหา และระบบที่มีอยู่ เพื่อหาจุดที่ AI ช่วยได้มากที่สุด</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>ออกแบบ</h3>
+            <p>วางสถาปัตยกรรมและเวิร์กโฟลว์ AI ที่เหมาะกับทีมและข้อกำหนดด้านความปลอดภัย</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>พัฒนา</h3>
+            <p>ลงมือสร้างแบบ iterative ส่งมอบงานทุกสัปดาห์ พร้อม test อัตโนมัติ</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <h3>ส่งมอบ & ดูแล</h3>
+            <p>Deploy ขึ้นระบบจริง ถ่ายทอดความรู้ให้ทีม และดูแลต่อเนื่องหลังส่งมอบ</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">แพ็กเกจ</span>
+          <h2>เลือกแพ็กเกจที่เหมาะกับคุณ</h2>
+          <div class="billing-toggle">
+            <span class="active" data-billing="monthly">รายเดือน</span>
+            <button class="switch" id="billingSwitch" aria-label="สลับรอบการชำระเงิน"><span></span></button>
+            <span data-billing="yearly">รายปี <em>-20%</em></span>
+          </div>
+        </div>
+        <div class="grid grid-3 pricing">
+          <article class="price-card reveal">
+            <h3>Starter</h3>
+            <p class="price-desc">สำหรับทีมเล็กที่เริ่มใช้ AI</p>
+            <p class="price">฿<span data-monthly="15,000" data-yearly="12,000">15,000</span><small>/เดือน</small></p>
+            <ul>
+              <li>AI Code Review 2 repo</li>
+              <li>เวิร์กช็อป 1 ครั้ง</li>
+              <li>ซัพพอร์ตทางอีเมล</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost btn-block">เลือกแพ็กเกจ</a>
+          </article>
+          <article class="price-card featured reveal">
+            <span class="ribbon">ยอดนิยม</span>
+            <h3>Business</h3>
+            <p class="price-desc">สำหรับองค์กรที่ต้องการเร่งความเร็ว</p>
+            <p class="price">฿<span data-monthly="45,000" data-yearly="36,000">45,000</span><small>/เดือน</small></p>
+            <ul>
+              <li>AI Code Review ไม่จำกัด repo</li>
+              <li>AI Agent แบบกำหนดเอง 2 ตัว</li>
+              <li>เวิร์กช็อปรายไตรมาส</li>
+              <li>ซัพพอร์ตภายใน 4 ชั่วโมง</li>
+            </ul>
+            <a href="#contact" class="btn btn-white btn-block">เลือกแพ็กเกจ</a>
+          </article>
+          <article class="price-card reveal">
+            <h3>Enterprise</h3>
+            <p class="price-desc">โซลูชันเฉพาะสำหรับองค์กรขนาดใหญ่</p>
+            <p class="price price-custom">ติดต่อฝ่ายขาย</p>
+            <ul>
+              <li>ทีมพัฒนาเฉพาะของคุณ</li>
+              <li>On-premise / Private cloud</li>
+              <li>SLA และ Security audit</li>
+              <li>ผู้จัดการบัญชีส่วนตัว</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost btn-block">คุยกับเรา</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>คำถามที่พบบ่อย</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>AI Coding คืออะไร และต่างจากการเขียนโค้ดแบบเดิมอย่างไร?</summary>
+            <p>AI Coding คือการใช้โมเดล AI ช่วยเขียน อธิบาย ทดสอบ และปรับปรุงโค้ด นักพัฒนายังเป็นผู้ควบคุมและตัดสินใจ แต่ทำงานได้เร็วขึ้นมากเพราะงานซ้ำ ๆ ถูกช่วยทำโดย AI</p>
+          </details>
+          <details class="reveal">
+            <summary>โค้ดและข้อมูลของบริษัทจะปลอดภัยไหม?</summary>
+            <p>เราเลือกใช้เครื่องมือที่ไม่นำข้อมูลลูกค้าไปฝึกโมเดล ทำสัญญา NDA ทุกโปรเจกต์ และรองรับการติดตั้งแบบ on-premise สำหรับองค์กรที่มีข้อกำหนดเข้มงวด</p>
+          </details>
+          <details class="reveal">
+            <summary>ใช้เวลานานแค่ไหนกว่าจะเห็นผล?</summary>
+            <p>ลูกค้าส่วนใหญ่เห็นผลด้านความเร็วในการพัฒนาภายใน 2–4 สัปดาห์แรกหลังเริ่มใช้เวิร์กโฟลว์ใหม่</p>
+          </details>
+          <details class="reveal">
+            <summary>ทีมของเราไม่เคยใช้ AI มาก่อน เริ่มได้ไหม?</summary>
+            <p>ได้แน่นอน เรามีหลักสูตรอบรมตั้งแต่พื้นฐาน และค่อย ๆ นำ AI เข้าไปในเวิร์กโฟลว์ของทีมทีละขั้น</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-text">
+            <h2>พร้อมเร่งความเร็วให้ทีมของคุณแล้วหรือยัง?</h2>
+            <p>ฝากข้อมูลไว้ ทีมงาน MilerDev จะติดต่อกลับภายใน 1 วันทำการ</p>
+            <ul class="contact-info">
+              <li>📧 hello@milerdev.com</li>
+              <li>📞 02-123-4567</li>
+              <li>📍 กรุงเทพมหานคร, ประเทศไทย</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label>ชื่อ-นามสกุล
+              <input type="text" name="name" required placeholder="สมชาย ใจดี">
+            </label>
+            <label>อีเมล
+              <input type="email" name="email" required placeholder="you@company.com">
+            </label>
+            <label>รายละเอียดโปรเจกต์
+              <textarea name="message" rows="4" required placeholder="เล่าให้เราฟังสั้น ๆ ว่าคุณต้องการอะไร"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">ส่งข้อความ</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span>Miler<strong>Dev</strong></span>
+      </a>
+      <p>© <span id="year"></span> MilerDev Co., Ltd. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
